@@ -1,0 +1,39 @@
+{
+    "name": "nodejs-api-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js",
+      "precommit:check": "npx eslint .",
+      "precommit:fix": "npx eslint . --fix",
+      "development": "npx eslint . && SET NODE_ENV=development && nodemon server.js"
+  },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Chiang-Rai-Technology/nodejs-api-template.git"
+    },
+    "author": "MOSCOW",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Chiang-Rai-Technology/nodejs-api-template/issues"
+    },
+    "homepage": "https://github.com/Chiang-Rai-Technology/nodejs-api-template#readme",
+    "type": "module",
+    "dependencies": {
+        "bson": "^6.2.0",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "jsonwebtoken": "^9.0.2",
+        "lodash": "^4.17.21",
+        "mongoose": "^8.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^8.54.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^5.0.1",
+        "prettier": "^3.1.0"
+    }
+}
